@@ -1,0 +1,10 @@
+SELECT DISTINCT[Parental_Level_of_Education]
+FROM [StudentPerformance].[StudentPerformance].[Source_Data_Staging]
+ORDER BY [Parental_Level_of_Education] ASC;
+
+SELECT * FROM StudentPerformance.StudentPerformance.DimParental_Level_of_Education;
+
+UPDATE StudentPerformance.StudentPerformance.Source_Data_Staging
+SET StudentPerformance.StudentPerformance.Source_Data_Staging.Parental_Level_of_EducationID = StudentPerformance.StudentPerformance.DimParental_Level_of_Education.Parental_Level_of_EducationSK
+From StudentPerformance.StudentPerformance.Source_Data_Staging
+INNER JOIN StudentPerformance.StudentPerformance.DimParental_Level_of_Education ON StudentPerformance.StudentPerformance.Source_Data_Staging.[Parental_Level_of_Education] = StudentPerformance.StudentPerformance.DimParental_Level_of_Education.[Parental_Level_of_Education];

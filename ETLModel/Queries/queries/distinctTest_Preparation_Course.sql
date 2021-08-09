@@ -1,0 +1,10 @@
+SELECT DISTINCT[Test_Preparation_Course]
+FROM [StudentPerformance].[StudentPerformance].[Source_Data_Staging]
+ORDER BY [Test_Preparation_Course] ASC;
+
+SELECT * FROM StudentPerformance.StudentPerformance.DimTest_Preparation_Course;
+
+UPDATE StudentPerformance.StudentPerformance.Source_Data_Staging
+SET StudentPerformance.StudentPerformance.Source_Data_Staging.Test_Preparation_CourseID = StudentPerformance.StudentPerformance.DimTest_Preparation_Course.Test_Preparation_CourseSK
+From StudentPerformance.StudentPerformance.Source_Data_Staging
+INNER JOIN StudentPerformance.StudentPerformance.DimTest_Preparation_Course ON StudentPerformance.StudentPerformance.Source_Data_Staging.[Test_Preparation_Course] = StudentPerformance.StudentPerformance.DimTest_Preparation_Course.[Test_Preparation_Course];

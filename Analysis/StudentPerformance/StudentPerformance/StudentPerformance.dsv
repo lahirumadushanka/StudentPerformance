@@ -1,0 +1,183 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e0f5ab06-70a5-4d5e-a61d-0c3724f51e6b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>StudentPerformance</ID>
+  <Name>StudentPerformance</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Student Performance</DataSourceID>
+  <Schema>
+    <xs:schema id="StudentPerformance" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="StudentPerformance" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="e16b1f36-91b3-4804-b0ea-df775ba28e1a">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="StudentPerformance_FactStudentPerformance" msprop:design-time-name="a1769138-7882-4e86-b4d9-297b443a9738" msprop:DbTableName="FactStudentPerformance" msprop:FriendlyName="FactStudentPerformance" msprop:DbSchemaName="StudentPerformance" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FactStudentPerformanceID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="1089e580-7f3a-425f-a9a4-7054e0a1a17f" msprop:DbColumnName="FactStudentPerformanceID" msprop:FriendlyName="FactStudentPerformanceID" type="xs:int" />
+                  <xs:element name="GenderSK" msprop:design-time-name="0dae9d1d-12af-412a-87a1-68d831910498" msprop:DbColumnName="GenderSK" msprop:FriendlyName="GenderSK" type="xs:int" minOccurs="0" />
+                  <xs:element name="EthnicitySK" msprop:design-time-name="dcd49f58-be99-4cfd-83e0-adca0a4179ad" msprop:DbColumnName="EthnicitySK" msprop:FriendlyName="EthnicitySK" type="xs:int" minOccurs="0" />
+                  <xs:element name="Parental_Level_of_EducationSK" msprop:design-time-name="1b274fc3-82d4-4ce9-995a-0e04e224809d" msprop:DbColumnName="Parental_Level_of_EducationSK" msprop:FriendlyName="Parental_Level_of_EducationSK" type="xs:int" minOccurs="0" />
+                  <xs:element name="LunchSK" msprop:design-time-name="00226b30-80fe-4e1b-b984-27945ca81ca8" msprop:DbColumnName="LunchSK" msprop:FriendlyName="LunchSK" type="xs:int" minOccurs="0" />
+                  <xs:element name="Test_Preparation_CourseSK" msprop:design-time-name="703144c7-ae9c-4342-9142-e1ed232c0943" msprop:DbColumnName="Test_Preparation_CourseSK" msprop:FriendlyName="Test_Preparation_CourseSK" type="xs:int" minOccurs="0" />
+                  <xs:element name="Math_Score" msprop:design-time-name="58d868c8-41a6-4258-b700-7cc0f906b0c1" msprop:DbColumnName="Math_Score" msprop:FriendlyName="Math_Score" type="xs:int" minOccurs="0" />
+                  <xs:element name="Reading_Score" msprop:design-time-name="a649c622-b0d6-4055-8946-75a03e3f0423" msprop:DbColumnName="Reading_Score" msprop:FriendlyName="Reading_Score" type="xs:int" minOccurs="0" />
+                  <xs:element name="Writing_Score" msprop:design-time-name="6ccfa236-c304-4cf1-86f2-750d92b6f216" msprop:DbColumnName="Writing_Score" msprop:FriendlyName="Writing_Score" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="StudentPerformance_DimGender" msprop:design-time-name="fee87a4d-f312-40ec-af4a-497c282b1e6e" msprop:DbTableName="DimGender" msprop:FriendlyName="DimGender" msprop:DbSchemaName="StudentPerformance" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="GenderSK" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="6aebb391-c768-41b3-8b08-0f38dde0af28" msprop:DbColumnName="GenderSK" msprop:FriendlyName="GenderSK" type="xs:int" />
+                  <xs:element name="Gender" msprop:design-time-name="671903dd-0fe1-457c-90d7-0c4d507a3a78" msprop:DbColumnName="Gender" msprop:FriendlyName="Gender" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="StudentPerformance_DimTest_Preparation_Course" msprop:design-time-name="0ca5eeed-a8a3-431c-9a22-035a571ba178" msprop:DbTableName="DimTest_Preparation_Course" msprop:FriendlyName="DimTest_Preparation_Course" msprop:DbSchemaName="StudentPerformance" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Test_Preparation_CourseSK" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="6e3058d7-383d-4e5f-9ca8-a5ecbe5ef2ba" msprop:DbColumnName="Test_Preparation_CourseSK" msprop:FriendlyName="Test_Preparation_CourseSK" type="xs:int" />
+                  <xs:element name="Test_Preparation_Course" msprop:design-time-name="fa7461c6-396e-4176-821c-094eab35c8e3" msprop:DbColumnName="Test_Preparation_Course" msprop:FriendlyName="Test_Preparation_Course" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="StudentPerformance_DimEthnicity" msprop:design-time-name="5c944316-08ee-4d99-90c1-1f109bee850b" msprop:DbTableName="DimEthnicity" msprop:FriendlyName="DimEthnicity" msprop:DbSchemaName="StudentPerformance" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="EthnicitySK" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="3ff65e19-48df-4e20-8ba0-3e0271f34a3d" msprop:DbColumnName="EthnicitySK" msprop:FriendlyName="EthnicitySK" type="xs:int" />
+                  <xs:element name="Ethnicity" msprop:design-time-name="dbcefaee-9630-4493-af1c-4a32db0a8553" msprop:DbColumnName="Ethnicity" msprop:FriendlyName="Ethnicity" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="StudentPerformance_DimParental_Level_of_Education" msprop:design-time-name="97520537-764d-4f04-ba23-bbc093aa17b5" msprop:DbTableName="DimParental_Level_of_Education" msprop:FriendlyName="DimParental_Level_of_Education" msprop:DbSchemaName="StudentPerformance" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parental_Level_of_EducationSK" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="2f0b2494-8ad9-418f-a2c8-b70ef518c100" msprop:DbColumnName="Parental_Level_of_EducationSK" msprop:FriendlyName="Parental_Level_of_EducationSK" type="xs:int" />
+                  <xs:element name="Parental_Level_of_Education" msprop:design-time-name="517cc3db-585e-4f8c-85b5-323ba5999548" msprop:DbColumnName="Parental_Level_of_Education" msprop:FriendlyName="Parental_Level_of_Education" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="StudentPerformance_DimLunch" msprop:design-time-name="d8334b90-a821-4e49-9ac6-c5f0d19e70ba" msprop:DbTableName="DimLunch" msprop:FriendlyName="DimLunch" msprop:DbSchemaName="StudentPerformance" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="LunchSK" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="d6c58c5a-278d-4be7-bad9-3cf2b9adab51" msprop:DbColumnName="LunchSK" msprop:FriendlyName="LunchSK" type="xs:int" />
+                  <xs:element name="Lunch" msprop:design-time-name="2bfb68de-b546-433a-aad2-d5b8a1305601" msprop:DbColumnName="Lunch" msprop:FriendlyName="Lunch" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//StudentPerformance_FactStudentPerformance" />
+          <xs:field xpath="FactStudentPerformanceID" />
+        </xs:unique>
+        <xs:unique name="StudentPerformance_DimGender_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//StudentPerformance_DimGender" />
+          <xs:field xpath="GenderSK" />
+        </xs:unique>
+        <xs:unique name="StudentPerformance_DimTest_Preparation_Course_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//StudentPerformance_DimTest_Preparation_Course" />
+          <xs:field xpath="Test_Preparation_CourseSK" />
+        </xs:unique>
+        <xs:unique name="StudentPerformance_DimEthnicity_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//StudentPerformance_DimEthnicity" />
+          <xs:field xpath="EthnicitySK" />
+        </xs:unique>
+        <xs:unique name="StudentPerformance_DimParental_Level_of_Education_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//StudentPerformance_DimParental_Level_of_Education" />
+          <xs:field xpath="Parental_Level_of_EducationSK" />
+        </xs:unique>
+        <xs:unique name="StudentPerformance_DimLunch_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//StudentPerformance_DimLunch" />
+          <xs:field xpath="LunchSK" />
+        </xs:unique>
+        <xs:keyref name="FK_EthnicitySK" refer="StudentPerformance_DimEthnicity_Constraint1">
+          <xs:selector xpath=".//StudentPerformance_FactStudentPerformance" />
+          <xs:field xpath="EthnicitySK" />
+        </xs:keyref>
+        <xs:keyref name="FK_GenderSK" refer="StudentPerformance_DimGender_Constraint1">
+          <xs:selector xpath=".//StudentPerformance_FactStudentPerformance" />
+          <xs:field xpath="GenderSK" />
+        </xs:keyref>
+        <xs:keyref name="FK_Test_Preparation_CourseSK" refer="StudentPerformance_DimTest_Preparation_Course_Constraint1">
+          <xs:selector xpath=".//StudentPerformance_FactStudentPerformance" />
+          <xs:field xpath="Test_Preparation_CourseSK" />
+        </xs:keyref>
+        <xs:keyref name="FK_LunchSK" refer="StudentPerformance_DimLunch_Constraint1">
+          <xs:selector xpath=".//StudentPerformance_FactStudentPerformance" />
+          <xs:field xpath="LunchSK" />
+        </xs:keyref>
+        <xs:keyref name="FK_Parental_Level_of_EducationSK" refer="StudentPerformance_DimParental_Level_of_Education_Constraint1">
+          <xs:selector xpath=".//StudentPerformance_FactStudentPerformance" />
+          <xs:field xpath="Parental_Level_of_EducationSK" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <StudentPerformance xmlns="" />
+  </Schema>
+</DataSourceView>
